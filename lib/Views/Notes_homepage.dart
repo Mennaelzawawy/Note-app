@@ -9,7 +9,10 @@ class notesHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [appBarWidget(),
+        children: [
+           SizedBox(height: 40,),
+          appBarWidget(),
+          SizedBox(height: 10,),
         Expanded(child: NotesListView())],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/Views/notes_listview.dart';
 import 'package:note_app/Widgets/appbar_widget.dart';
 
 class notesHomePage extends StatelessWidget {
@@ -8,7 +9,8 @@ class notesHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [appBarWidget()],
+        children: [appBarWidget(),
+        Expanded(child: NotesListView())],
       ),
     );
   }

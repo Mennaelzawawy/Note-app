@@ -15,10 +15,10 @@ class appBarWidget extends StatelessWidget {
           const Text(
             "Notes",
 
-            style: TextStyle(color: Colors.black,fontSize: 24),
+            style: TextStyle(color: Colors.white,fontSize: 24),
           ),
           
-          searchCustomWidget(),
+          SearchCustomWidget(),
         ],
       ),
     );
